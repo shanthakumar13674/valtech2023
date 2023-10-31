@@ -24,6 +24,11 @@ public class AppTest extends TestCase {
 		return new TestSuite(AppTest.class);
 	}
 
+	public void testSayHello() {
+		App app = new App();
+		assertEquals("Hello World",app.sayHello());
+	}
+
 	/**
 	 * Rigourous Test :-)
 	 */
